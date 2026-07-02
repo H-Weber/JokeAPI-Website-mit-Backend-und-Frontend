@@ -1,0 +1,50 @@
+#jokebutton {
+    background-color: white;
+    color:black;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-items: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: all 0.1s ease
+
+}
+
+#jokebutton:hover{
+    cursor: pointer;
+    color: cyan;
+    border-color: cyan;
+    transform: translate(-50%, -50%) scale(1.25);
+}
+#center{
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+.dropdown {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 100px;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+.dropdown-toggle,
+.item {
+    width: 100px;
+}
+.item:hover{
+  background-color: rgb(0, 110, 255);
+  cursor: pointer;
+}
