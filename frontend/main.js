@@ -1,9 +1,12 @@
 async function fetchjoke() {
-  const response = await fetch("/api/hello");
+  const response = await fetch("http://127.0.0.1:8080/api/hello");
   const data = await response.json();
+
   const jokeP = document.getElementById("jokeP");
   const jokeP2 = document.getElementById("jokeP2");
+
   jokeP.style.display = "block";
+
   if (data.twopart === true) {
     jokeP2.style.display = "block";
     jokeP.textContent = data.setup;
@@ -13,6 +16,7 @@ async function fetchjoke() {
     jokeP.textContent = data.joke;
   }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.querySelector(".dropdown");
   const toggleButton = document.querySelector(".dropdown-toggle");
