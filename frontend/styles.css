@@ -20,10 +20,26 @@
     border-color: cyan;
     transform: translate(-50%, -50%) scale(1.25);
 }
-#center{
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+.center{
+  color: white;
+  font-family: Arial, sans-serif;
   width: 60%;
   margin: 20px auto;
   text-align: center;
+  font-size: large;
+}
+.container{
+  background-color: rgb(24, 211, 211);
+  width: 400px;
+  height: 600px;
+  border-radius: 8px;
 }
 .dropdown {
   position: absolute;
